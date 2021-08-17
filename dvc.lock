@@ -4,10 +4,10 @@ stages:
     cmd: python test.py
     deps:
     - path: test.py
-      md5: 49416ab79de9e4079da57cad2803cedc
-      size: 93
+      md5: 7a509cc5d7f5b37fc5d7ec2bcf05990f
+      size: 127
     outs:
     - path: test
-      md5: fca5ddf8ca4055dd2e97df6da04a2280.dir
-      size: 317
-      nfiles: 1
+      md5: 27d70d17a511cfb694868bde8f0679d6.dir
+      size: 543
+      nfiles: 2

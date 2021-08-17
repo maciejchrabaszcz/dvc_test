@@ -9,10 +9,10 @@
 <body>
     <table>
 <thead>
-<tr><th>test.json                        </th></tr>
+<tr><th>test.json                                     </th></tr>
 </thead>
 <tbody>
-<tr><td>{&#x27;data&#x27;: {&#x27;step&#x27;: 9, &#x27;acc&#x27;: 3.0}}</td></tr>
+<tr><td>{&#x27;data&#x27;: {&#x27;step&#x27;: 9, &#x27;acc&#x27;: 3.0, &#x27;loss&#x27;: -81}}</td></tr>
 </tbody>
 </table>
 <br>
@@ -26,61 +26,61 @@
         "acc": "0.0",
         "rev": "workspace",
         "step": "0",
-        "timestamp": "1629206713770"
+        "timestamp": "1629207531984"
     },
     {
         "acc": "1.0",
         "rev": "workspace",
         "step": "1",
-        "timestamp": "1629206713770"
+        "timestamp": "1629207531985"
     },
     {
         "acc": "1.4142135623730951",
         "rev": "workspace",
         "step": "2",
-        "timestamp": "1629206713770"
+        "timestamp": "1629207531985"
     },
     {
         "acc": "1.7320508075688772",
         "rev": "workspace",
         "step": "3",
-        "timestamp": "1629206713770"
+        "timestamp": "1629207531985"
     },
     {
         "acc": "2.0",
         "rev": "workspace",
         "step": "4",
-        "timestamp": "1629206713771"
+        "timestamp": "1629207531985"
     },
     {
         "acc": "2.23606797749979",
         "rev": "workspace",
         "step": "5",
-        "timestamp": "1629206713771"
+        "timestamp": "1629207531986"
     },
     {
         "acc": "2.449489742783178",
         "rev": "workspace",
         "step": "6",
-        "timestamp": "1629206713771"
+        "timestamp": "1629207531986"
     },
     {
         "acc": "2.6457513110645907",
         "rev": "workspace",
         "step": "7",
-        "timestamp": "1629206713771"
+        "timestamp": "1629207531986"
     },
     {
         "acc": "2.8284271247461903",
         "rev": "workspace",
         "step": "8",
-        "timestamp": "1629206713771"
+        "timestamp": "1629207531986"
     },
     {
         "acc": "3.0",
         "rev": "workspace",
         "step": "9",
-        "timestamp": "1629206713772"
+        "timestamp": "1629207531987"
     }
 ]
     },
@@ -112,6 +112,103 @@
 }
 ;
     vegaEmbed('#plot0', spec);
+</script>
+<div id = "plot1"></div>
+<script type = "text/javascript">
+    var spec = {
+    "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+    "data": {
+        "values": [
+    {
+        "loss": "0",
+        "rev": "workspace",
+        "step": "0",
+        "timestamp": "1629207531984"
+    },
+    {
+        "loss": "-1",
+        "rev": "workspace",
+        "step": "1",
+        "timestamp": "1629207531985"
+    },
+    {
+        "loss": "-4",
+        "rev": "workspace",
+        "step": "2",
+        "timestamp": "1629207531985"
+    },
+    {
+        "loss": "-9",
+        "rev": "workspace",
+        "step": "3",
+        "timestamp": "1629207531985"
+    },
+    {
+        "loss": "-16",
+        "rev": "workspace",
+        "step": "4",
+        "timestamp": "1629207531985"
+    },
+    {
+        "loss": "-25",
+        "rev": "workspace",
+        "step": "5",
+        "timestamp": "1629207531986"
+    },
+    {
+        "loss": "-36",
+        "rev": "workspace",
+        "step": "6",
+        "timestamp": "1629207531986"
+    },
+    {
+        "loss": "-49",
+        "rev": "workspace",
+        "step": "7",
+        "timestamp": "1629207531986"
+    },
+    {
+        "loss": "-64",
+        "rev": "workspace",
+        "step": "8",
+        "timestamp": "1629207531986"
+    },
+    {
+        "loss": "-81",
+        "rev": "workspace",
+        "step": "9",
+        "timestamp": "1629207531987"
+    }
+]
+    },
+    "title": "",
+    "width": 300,
+    "height": 300,
+    "mark": {
+        "type": "line"
+    },
+    "encoding": {
+        "x": {
+            "field": "step",
+            "type": "quantitative",
+            "title": "step"
+        },
+        "y": {
+            "field": "loss",
+            "type": "quantitative",
+            "title": "loss",
+            "scale": {
+                "zero": false
+            }
+        },
+        "color": {
+            "field": "rev",
+            "type": "nominal"
+        }
+    }
+}
+;
+    vegaEmbed('#plot1', spec);
 </script>
 </body>
 </html>
