@@ -1,0 +1,13 @@
+schema: '2.0'
+stages:
+  test:
+    cmd: python test.py
+    deps:
+    - path: test.py
+      md5: 49416ab79de9e4079da57cad2803cedc
+      size: 93
+    outs:
+    - path: test
+      md5: fca5ddf8ca4055dd2e97df6da04a2280.dir
+      size: 317
+      nfiles: 1

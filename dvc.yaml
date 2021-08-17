@@ -1,0 +1,9 @@
+stages:
+  test:
+    cmd: python test.py
+    deps:
+    - test.py
+    live:
+      test:
+        summary: true
+        html: true
