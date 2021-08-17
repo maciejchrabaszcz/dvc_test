@@ -7,3 +7,4 @@ stages:
       test:
         summary: true
         html: true
+        cache: false
